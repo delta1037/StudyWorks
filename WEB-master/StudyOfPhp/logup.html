@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="loginlogup.css">
+</head>
+
+
+<body>
+<h1>新用户注册</h1>
+
+<form action="logup.php" method="post" id="log">
+    <dl style="padding-top: 2em">
+        <dt><span id="logup">邮箱：</span><input type="email" name="account" placeholder="email" id="inpu1"></dt>
+        <dt><span id="logup">密码：</span><input type="password" name="password" id="pw1" placeholder="password" ></dt>
+        <dt><span id="logup">确认密码：</span><input type="password" name="repassword" id="pw2" placeholder="repassword" onkeyup="compare()"><span style="padding-left: 15em" id="tips"></span></dt></dt>
+
+        <dt><input type="submit" value="注册" style="position: absolute;left: 10em"> <input type="submit" formaction="login.html" value="返回登录" style="position: absolute;left: 16em"></dt>
+    </dl>
+
+    <script>
+        function compare() {
+            var pw1=document.getElementById("pw1").value;
+            var pw2=document.getElementById("pw2").value;
+
+            if(pw1 == pw2){
+                document.getElementById("tips").innerHTML="<font color='green'>OK</font>";
+                document.getElementById("logup").disabled=false;
+            }else{
+                document.getElementById("tips").innerHTML="<font color='red'>密码不一致</font>";
+                document.getElementById("logup").disabled=true;
+            }
+        }
+    </script>
+</form>
+
+</body>
+</html>

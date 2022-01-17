@@ -1,0 +1,8 @@
+KUBELET_ADDRESS="--address=127.0.0.1"
+KUBELET_HOSTNAME="--hostname-override=39.108.124.169"
+KUBECONFIG="--config=/etc/kubernetes/kubeconfig.yaml"
+KUBECONFIG_ENABLE="--require-kubeconfig"
+# KUBELET_API_SERVER="--api-servers=http://39.108.124.169:8080"
+# pod infrastructure container
+KUBELET_POD_INFRA_CONTAINER="--pod-infra-container-image=registry.access.redhat.com/rhel7/pod-infrastructure:latest"
+KUBELET_ARGS="--enable-server=true --enable-debugging-handlers=true"

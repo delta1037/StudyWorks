@@ -1,0 +1,45 @@
+body {
+    background-image: url("https://geniusrabbit.oss-cn-shenzhen.aliyuncs.com/background.jpg?Expires=37515071396&OSSAccessKeyId=LTAIULN9by18sqi6&Signature=JtEw7apRQb2XRfTNX9YQoTbun2k%3D");
+    background-size: cover;
+}
+h1{
+    color: azure;
+    text-align: center;
+}
+input{
+    border-color: lavenderblush;
+    border-style: double;
+    border-radius: 5px;
+}
+#log{
+    width: 400px;
+    height: 260px;
+    padding: 13px;
+
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -200px;
+    margin-right: -200px;
+
+    background-color: rgba(255,255,153,0.4);
+
+    border-radius: 10px;
+    text-align: left;
+}
+dl{
+    display: block;
+    list-style-position: outside;
+    position: absolute;
+}
+dt{
+    text-align: justify;
+    height: 3em;
+}
+#logup{
+    display:inline-block;
+    position: inherit;
+    width: 8em;
+    text-align: center;
+    color: blue;
+}
